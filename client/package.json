@@ -28,10 +28,12 @@
     "yup": "^1.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "npm update-browserslist-db && react-scripts build --no-warnings",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "react dev",
+    "start": "react start",
+    "build": "react build",
+    "test": "react test",
+    "eject": "react eject",
+    "lint": "react lint"
   },
   "eslintConfig": {
     "extends": [
