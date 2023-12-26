@@ -68,7 +68,7 @@ const CartMenu = () => {
                       alt={item?.name}
                       width="123px"
                       height="164px"
-                      src={`https://e-commerce-react-strapi.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                      src={`${process.env.REACT_PUBLIC_STRAPI_URL}${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
                     />
                   </Box>
                   <Box flex="1 1 60%">
