@@ -47,7 +47,7 @@ const Checkout = () => {
       })),
     };
 
-    const response = await fetch(`${process.env.REACT_PUBLIC_STRAPI_URL}/api/orders`, {
+    const response = await fetch(`https://e-commerce-react-strapi.onrender.com/api/orders`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestBody),

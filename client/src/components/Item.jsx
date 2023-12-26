@@ -38,7 +38,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="300px"
           height="400px"
-          src={`${process.env.REACT_PUBLIC_STRAPI_URL}${url}`}
+          src={`https://e-commerce-react-strapi.onrender.com${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: "pointer" }}
         />

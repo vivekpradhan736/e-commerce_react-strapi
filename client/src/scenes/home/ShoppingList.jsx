@@ -20,7 +20,7 @@ const ShoppingList = () => {
 
   async function getItems() {
     const items = await fetch(
-       `${process.env.REACT_PUBLIC_STRAPI_URL}/api/items?populate=image`,
+       `https://e-commerce-react-strapi.onrender.com/api/items?populate=image`,
       { method: "GET" }
     );
     const itemsJson = await items.json();

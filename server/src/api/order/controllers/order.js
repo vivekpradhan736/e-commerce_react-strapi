@@ -36,8 +36,8 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         payment_method_types: ["card"],
         customer_email: email,
         mode: "payment",
-        success_url: `${process.env.REACT_PUBLIC_STRAPI_URL}/checkout/success`,
-        cancel_url: `${process.env.REACT_PUBLIC_STRAPI_URL}`,
+        success_url: `https://e-commerce-react-strapi.onrender.com/checkout/success`,
+        cancel_url: `https://e-commerce-react-strapi.onrender.com`,
         line_items: lineItems,
       });
 
