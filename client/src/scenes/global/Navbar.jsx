@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 import { shades } from "../../theme";
 import { setIsCartOpen } from "../../state";
 import { useAuth0 } from "@auth0/auth0-react";
-import { fontFamily, fontSize } from "@mui/system";
 import './Navbar.css'
 
 
@@ -18,7 +17,7 @@ function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
-  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
   return (
     <Box
