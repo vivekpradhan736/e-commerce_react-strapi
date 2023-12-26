@@ -30,7 +30,7 @@
   "scripts": {
     "dev": "react dev",
     "start": "react start",
-    "build": "react build",
+    "build": "react run build",
     "test": "react test",
     "eject": "react eject",
     "lint": "react lint"
